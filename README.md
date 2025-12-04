@@ -1,4 +1,4 @@
-# Everthing-About-LLD-in-System-Design-
+# All-About-LLD-in-System-Design
 # LLD Practice Repository
 
 This repository contains my personal practice work where I explored and implemented various ideas while learning.
