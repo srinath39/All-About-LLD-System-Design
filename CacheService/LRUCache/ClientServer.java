@@ -12,7 +12,7 @@ public class ClientServer<K,V>{
     }
 
     public static void main(String[] args){
-        ClientServer<Integer,String> clientServer=new ClientServer<>(new LRUCache<Integer,String>(3));
+        ClientServer<Integer,String> clientServer=new ClientServer<>(new LRUCache<>(3));
 
         clientServer.getCacheService().put(1,"aaa");
         clientServer.getCacheService().put(2,"bbb");

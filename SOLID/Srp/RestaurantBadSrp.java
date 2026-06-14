@@ -14,7 +14,7 @@ public class RestaurantBadSrp {
 
 
     public void serveItem(){
-        --no_of_dishes;
+        ++no_of_dishes;
     }
 
     public int getNoOfItemsServed(){

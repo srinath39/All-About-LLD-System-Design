@@ -16,7 +16,7 @@ class Chef {
 class Waiter{
     private int no_of_dishes_served;
     public void serveItem(){
-        --no_of_dishes_served;
+        ++no_of_dishes_served;
     }
 
     public int getNoOfItemsServed(){

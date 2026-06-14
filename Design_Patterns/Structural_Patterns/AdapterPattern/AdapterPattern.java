@@ -26,7 +26,12 @@ class Netbanking implements IPayment{
 
 // Third party payment service  ( Adaptee)
 // we only know what class name is , and the method it offers
-class RazorPay{
+interface IRazorPay{
+    public void registerPayment();
+}
+
+
+class RazorPay implements IRazorPay{
     public void registerPayment(){
         // we don't know the implementation 
         System.out.println("Paying using Razor Pay");
@@ -36,8 +41,8 @@ class RazorPay{
 
 // Adapter
 class PaymentAdapter implements IPayment{
-    private RazorPay razorPay;
-    public PaymentAdapter(RazorPay razorPay){
+    private IRazorPay razorPay;
+    public PaymentAdapter(IRazorPay razorPay){
         this.razorPay=razorPay;
     }
     public void pay(){
