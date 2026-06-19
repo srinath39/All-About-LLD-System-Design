@@ -52,6 +52,7 @@ public class ExitGate extends  Gate {
 
         // update the ticket status to complete
         ticket.setEnumTicketStatus(EnumTicketStatus.TERMINATED);
+        getParkingLot().removeTicket(ticketId);
     }
 
 }

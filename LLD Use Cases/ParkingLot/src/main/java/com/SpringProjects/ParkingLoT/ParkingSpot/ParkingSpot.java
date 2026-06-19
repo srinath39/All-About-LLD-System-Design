@@ -32,7 +32,7 @@ public class ParkingSpot {
         return vehicle;
     }
 
-    public void setEnumSpotStatus(EnumSpotStatus enumSpotStatus) {
+    private void setEnumSpotStatus(EnumSpotStatus enumSpotStatus) {
         this.enumSpotStatus = enumSpotStatus;
     }
 
@@ -41,12 +41,12 @@ public class ParkingSpot {
             throw new RuntimeException("ParkingSpot is unavailable");
         }
         this.vehicle = vehicle;
-        enumSpotStatus=EnumSpotStatus.OCCUPIED;
+        setEnumSpotStatus(EnumSpotStatus.OCCUPIED);
     }
 
     private void removeVehicle(IVehicle vehicle) {
         this.vehicle = null;
-        enumSpotStatus=EnumSpotStatus.AVAILABLE;
+        setEnumSpotStatus(EnumSpotStatus.AVAILABLE);
     }
 
     public void relaseVehicleAndFreeUpSpace(){

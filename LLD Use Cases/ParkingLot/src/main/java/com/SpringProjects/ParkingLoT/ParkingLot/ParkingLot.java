@@ -39,6 +39,10 @@ public class ParkingLot {
         return tickets.get(ticketId);
     }
 
+    public void removeTicket(String ticketId){
+        tickets.remove(ticketId);
+    }
+
     public ParkingSpot getAvailableParingSpotBySpotSize(EnumSpotSize spotSize){
         if(spotSize==null){
             return null;

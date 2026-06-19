@@ -10,9 +10,9 @@ public class PricingStrategyBySeconds implements  IPricingStrategy {
     private static Map<EnumVehicleType, Double> map = new HashMap<>();
 
     {
-        map.put(EnumVehicleType.Bike, new Double(2));
-        map.put(EnumVehicleType.CAR, new Double(4));
-        map.put(EnumVehicleType.BUS, new Double(6));
+        map.put(EnumVehicleType.Bike, Double.valueOf(2));   // per second price for bike
+        map.put(EnumVehicleType.CAR, Double.valueOf(4)); // per second price for car
+        map.put(EnumVehicleType.BUS, Double.valueOf(6)); // per second price for bus
     }
 
     @Override

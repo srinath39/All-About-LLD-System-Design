@@ -9,9 +9,9 @@ public class PricingStrategyByHours implements  IPricingStrategy {
     private static Map<EnumVehicleType, Double> map = new HashMap<>();
 
     {
-        map.put(EnumVehicleType.Bike, new Double(25));
-        map.put(EnumVehicleType.CAR, new Double(50));
-        map.put(EnumVehicleType.BUS, new Double(75));
+        map.put(EnumVehicleType.Bike, Double.valueOf(25));   // per hour price for bike
+        map.put(EnumVehicleType.CAR, Double.valueOf(50)); // per hour price for car
+        map.put(EnumVehicleType.BUS, Double.valueOf(75)); // per hour price for bus
     }
 
     @Override
