@@ -61,6 +61,13 @@ public class BookMyShowApplication {
 
 		show2.getSeats().stream().forEach(System.out::println);
 
+
+		// pending
+		// Explore Factory Pattern in payment and Discount
+		// Explore Adapter pattern in payment and Discount
+		// Explore Observer pattern for notification service
+		//  other Design patterns too
+
 	}
 
 }

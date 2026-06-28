@@ -23,7 +23,7 @@ public class BookingManager {
         return bookingManager;
     }
 
-    public static Booking bookTicketForShow(Show show, User user, List<String> seats, IPaymentGateway paymentGateway, IDiscountCoupon discountCoupon){
+    public Booking bookTicketForShow(Show show, User user, List<String> seats, IPaymentGateway paymentGateway, IDiscountCoupon discountCoupon){
         try{
             // Seats is available or not
             List<SeatForShow> screenSeats =seats.stream().map((seat -> {

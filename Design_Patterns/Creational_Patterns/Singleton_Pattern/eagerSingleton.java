@@ -1,7 +1,7 @@
 package Design_Patterns.Creational_Patterns.Singleton_Pattern;
 
 class DatabaseConnection {
-    public static DatabaseConnection databaseConnection=new DatabaseConnection();
+    private static DatabaseConnection databaseConnection=new DatabaseConnection();
 
     private DatabaseConnection(){
         // i wont be allowing anyone to allow obect to this call direclty
